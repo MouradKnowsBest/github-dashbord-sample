@@ -6,15 +6,15 @@ import Modal from './Modal';
 function App() {
 
   const [openModal,   setOpenModal]   =  useState(false); /* Hooks */ 
-  const [userInput,   setUserInput]   =  useState('');
+  const [userName,    setUserName]    =  useState('');
+  const [userInput,   setUserInput]   =  useState();
   const [reposit,       setReposit]   =  useState([]);
   const [avatar,         setAvatar]   =  useState('');
   const [error,           setError]   =  useState(null);
   const [myIndex,       setMyIndex]   =  useState();
   const setData = ({avatar_url}) => {setAvatar(avatar_url)};
 
-
-  const handleSearch = e => { /* Gérer la Recherche quand l'utilisateur taoe le nom d'un user Github */ 
+  const handleSearch = e => { /* Gérer la Recherche quand l'utilisateur tape le nom d'un user Github */ 
     setUserInput(e.target.value);
   };
 
@@ -26,6 +26,7 @@ function App() {
           if (data.message) {
             setError(data.message)
           } else {
+          setUserName(data.login)
           setData(data);
           setError(null)
           }
@@ -46,14 +47,16 @@ function App() {
   
  return (
     <div className="App">
-      <div className="navbar"> Github Dashboard Sample </div> {/* LA BARRE DE NAVIGATION (NAV BAR) */}
+      <div className="navbar">  {/* LA BARRE DE NAVIGATION (NAV BAR) */}
+        <a href="./" title="Github LINK" className="navbarLink"> Github Dashboard Sample </a>
+       </div> 
   
       <div className="searchBar"> {/* LA BARRE DE RECHERCHE (SEARCH BAR) */}
           <Form onSubmit={handleSubmit}>
             <Form.Group>
-              <Form.Input placeholder ='Github user' name='github user' onChange={handleSearch}/>
+              <Form.Input placeholder ='Github user' name='github user' onChange={handleSearch} />
               <Form.Button color='pink' content ='Search' /> 
-            </Form.Group>
+              </Form.Group>
           </Form>
       </div>
 
@@ -67,7 +70,7 @@ function App() {
         <Image  src={avatar} wrapped ui={false} /> {/* IMAGE (AVATAR DE L'UTILISATEUR) */}
 
         <Card.Content> {/* INFO UTILISATEUR + le Modal qui s'affiche sur une clique*/}      
-            <Card.Header> {userInput} </Card.Header>
+            <Card.Header>  {userName}  </Card.Header>
             <List>
                 <List.Item>
                   <List.Content>            

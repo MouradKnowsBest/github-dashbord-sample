@@ -20,4 +20,29 @@
   padding: 20px 0;
 }
 
+.navbarLink.a{
+  text-decoration: none;
+}
 
+.navbarLink:hover {
+  color: white;
+}
+
+.navbarLink:active {
+  color: white;
+}
+
+.navbarLink:visited {
+  color: white;
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  .container header .header-nav-area #nav_container  {
+    display:flex;
+  }
+}
