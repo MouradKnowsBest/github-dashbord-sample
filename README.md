@@ -1,7 +1,8 @@
-# github-dashbord-sample
-A github dashbord sample !
+# Github dashbord sample
+A github dashbord sample that displays user's info and his public repositories details
 
-Language : React.JS 
+
+Language : React.JS / HTML / CSS
 Packages : Semantic-UI / moment 
 
 Link to the App (heberged on Netlify) ==> https://github-dashbord-sample.netlify.app/
