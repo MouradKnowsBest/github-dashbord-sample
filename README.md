@@ -5,4 +5,4 @@ A github dashbord sample that displays user's info and his public repositories d
 Language : React.JS / HTML / CSS
 Packages : Semantic-UI / moment 
 
-Link to the App (heberged on Netlify) ==> https://github-dashbord-sample.netlify.app/
+Link to the App (heberged on Netlify) ==> https://github-dashboard-app-v2.netlify.app/
