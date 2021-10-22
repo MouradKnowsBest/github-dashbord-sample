@@ -7,5 +7,5 @@ Packages : Semantic-UI / moment
 
 Link to the App (heberged on Netlify) ==> https://github-dashboard-app-v2.netlify.app/
 
-![Alt Text](https://gifyu.com/image/eqfz)
+!["example"](https://gifyu.com/image/eqfz)
 
