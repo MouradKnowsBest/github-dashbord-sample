@@ -7,5 +7,6 @@ Packages : Semantic-UI / moment
 
 Link to the App (heberged on Netlify) ==> https://github-dashboard-app-v2.netlify.app/
 
-![ u](https://gifyu.com/image/eqfz)
+![](https://s9.gifyu.com/images/Animation_Github_Dashboard_Sample.th.gif)
+
 
